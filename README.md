@@ -6,7 +6,8 @@ This is a set of two tools to import csv to pg db and server to search by id
 
 We assume that a postgres database is installed and we know the database name is known.
 
-1) clone the repo
+1) clone the repo:
+git clone https://github.com/sb-olr/promotions-app.git
 
 2) run:
 npm install
@@ -29,9 +30,9 @@ node server_promotions.js
 
 # Known Issues
 
-1) There is a unhandled promise exception which breaks the import script. it works for upto 25k rows. A fix is being worked on.
+1) There is currently an unhandled promise exception which breaks the import script in the end. It works for upto 25k rows. A fix is being worked on.
 
-2) Next refactor of the script will include chunking and batch inserts for a fixed number of records (eg 10k). This will also help when data file is extremely large by using several server threads.
+2) The next refactor of the script will include chunking and batch inserts for a fixed number of records (eg 10k). This will also help when data file is extremely large by using several server threads.
 
 3) Test data is provided. However suitable automated test were not provided due to time constraints. They are being added.
 

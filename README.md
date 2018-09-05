@@ -1,5 +1,5 @@
 # promotions-app
-This is a set of two tools to import csv to pg db and serve it (search by id) RESTfully
+This is a set of two tools to import csv to pg db and serve it (search by id) RESTfully written in Node.js (Javascript)
 
 
 # Instructions
